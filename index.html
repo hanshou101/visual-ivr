@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。小语音 / audio-->
   <script id="tpl-audio" type="text/html">
     <div class='pa' id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
       <a class='btn btn-default' href='#' role='button'> 放音
@@ -43,7 +43,7 @@
     </div>
   </script>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。这个没使用到。例子 / demo-->
   <script id="tpl-demo" type="text/html">
     <div class='pa' id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
       <a class='btn btn-default' href='#' role='button'> {{name}}
@@ -52,7 +52,7 @@
     </div>
   </script>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。语音 / Announce-->
   <script id="tpl-Announce" type="text/html">
     <div class='pa' id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
 
@@ -64,7 +64,7 @@
     </div>
   </script>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。小菜单 / menu-->
   <script id="tpl-menu" type="text/html">
     <div class="pa" id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
       <div class="panel panel-default panel-node panel-info">
@@ -83,7 +83,7 @@
     </div>
   </script>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。开始 / Root-->
   <script id="tpl-Root" type="text/html">
     <div class='pa' id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
       <a class='btn btn-success' href='#' role='button'> {{name}}
@@ -92,7 +92,7 @@
     </div>
   </script>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。结束 / Exit-->
   <script id="tpl-Exit" type="text/html">
     <div class='pa' id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
       <a class='btn btn-danger' href='#' role='button'> {{name}}
@@ -101,7 +101,7 @@
     </div>
   </script>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。工作时间 / WorkTime-->
   <script id="tpl-WorkTime" type="text/html">
     <div class="pa" id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
       <div class="panel panel-default panel-node panel-info">
@@ -118,7 +118,7 @@
     </div>
   </script>
 
-  <!--Mustache模板-->
+  <!--Mustache模板。大菜单 / Menu-->
   <script id="tpl-Menu" type="text/html">
     <div class="pa" id='{{id}}' style='top:{{top}}px;left:{{left}}px'>
       <div class="panel panel-default panel-node panel-info">
@@ -132,7 +132,8 @@
           </li>
           {{#choices}}
           <li id="{{id}}-key-{{key}}" data-pid="{{id}}" class="list-group-item panel-node-list">按{{key}}
-          </li>{{/choices}}
+          </li>
+          {{/choices}}
         </ul>
       </div>
     </div>

@@ -134,6 +134,8 @@
         console.log(data);
         var template = me.getTemplate(item);
 
+        console.log('Mustache','draw',data);
+
         $container.append(
           // 渲染出的
           Mustache.render(template, data),
@@ -257,6 +259,7 @@
     }
   };
 
+  // 可注释，没有关系
   window.IVR = root;
 
   root.emit = function (event) {
@@ -288,6 +291,7 @@
     // ???
     jsPlumb.setContainer('diagramContainer');
 
+    // 左侧【节点类型列表】中的元素，可拖入【容器区域】。
     $('.btn-controler').draggable({
       helper: 'clone',
       scope : 'ss'
@@ -410,6 +414,7 @@
    * 【Mustache】，传入【数据信息】和位置，渲染html
    */
   function renderHtml(type, position) {
+    console.log('Mustache','renderHtml',position);
     return Mustache.render($('#' + type).html(), position);
   }
 
@@ -470,7 +475,6 @@
       uuid   : id + '-in'
     }, config);
   }
-
 
 
 })();
