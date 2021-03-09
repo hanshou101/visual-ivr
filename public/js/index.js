@@ -301,10 +301,12 @@
     $(areaId).droppable({
       scope: 'ss',
       drop : function (event, ui) {
+        console.log('position',ui.position)
         dropNode(ui.draggable[0].dataset.template, ui.position);
       }
     });
 
+    // 处理删除功能。
     $('#app').on('click', function (event) {
       event.stopPropagation();
       event.preventDefault();
